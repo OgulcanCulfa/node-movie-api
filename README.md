@@ -1,18 +1,19 @@
 # node-movie-api
-Node.JS Movie API
+Node.JS movie API
 
 
-# Movies
+# movies
 
 
 | Route         | HTTP Method   | Description  |
 | :-------------: |:-------------:| :-----:|
-| /api/movie/   | "GET          | List all movies |
-| /api/movie/   | "GET          | {"title":"foo", "category":"bar","country":"example"} |
-| /api/movie/:movie_id   | "GET"          | Get a movie |
-| /api/movie/:movie_id   | "PUT"          | Update movies |
-| /api/movie/:movie_id   | "DELETE"          | Delete a movie |
-| /api/movie/top10   | "GET          | Get the top 10 movies |
+| /api/movies/   | "GET          | List all movies |
+| /api/movies/   | "GET          | {"title":"foo", "category":"bar","country":"example"} |
+| /api/movies/:movies_id   | "GET"          | Get a movies |
+| /api/movies/:movies_id   | "PUT"          | Update movies |
+| /api/movies/:movies_id   | "DELETE"          | Delete a movies |
+| /api/movies/top10   | "GET          | Get the top 10 movies |
+| /api/movies/between/:start_year/:end_year   | "GET          | Movies between two years |
 
 <br>
 <br>
