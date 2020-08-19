@@ -6,7 +6,7 @@ Node.JS Movie API
 
 
 | Route         | HTTP Method   | Description  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| -----|
 | /api/movie/   | "GET          | List all movies |
 | /api/movie/   | "GET          | {"title":"foo", "category":"bar","country":"example"} |
 | /api/movie/:movie_id   | "GET"          | Get a movie |
@@ -19,14 +19,14 @@ Node.JS Movie API
 
 
 
-# Directors
+# directors
 
 
 | Route         | HTTP Method   | Description  |
-| ------------- |:-------------:| -----:|
-| /api/director/   | "GET          | List all directors |
-| /api/director/   | "GET          | {"title":"foo", "category":"bar","country":"example"} |
-| /api/director/:director_id   | "GET"          | Get a director |
-| /api/director/:director_id   | "PUT"          | Update directors |
-| /api/director/:director_id   | "DELETE"          | Delete a director |
-| /api/director/top10   | "GET          | Get the top 10 directors |
+| ------------- |:-------------:| -----|
+| /api/directors/   | "GET          | List all directorss |
+| /api/directors/   | "GET          | {"title":"foo", "category":"bar","country":"example"} |
+| /api/directors/:directors_id   | "GET"          | Get a directors |
+| /api/directors/:directors_id   | "PUT"          | Update directorss |
+| /api/directors/:directors_id   | "DELETE"          | Delete a directors |
+| /api/directors/top10   | "GET          | Get the top 10 directorss |
