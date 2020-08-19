@@ -6,7 +6,7 @@ Node.JS Movie API
 
 
 | Route         | HTTP Method   | Description  |
-| ------------- |:-------------:| -----|
+| :-------------: |:-------------:| :-----:|
 | /api/movie/   | "GET          | List all movies |
 | /api/movie/   | "GET          | {"title":"foo", "category":"bar","country":"example"} |
 | /api/movie/:movie_id   | "GET"          | Get a movie |
