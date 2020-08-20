@@ -4,9 +4,12 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require("body-parser");
 const logger = require('morgan');
+const app = express();
+
 const indexRouter = require('./routes/index');
 const movie = require('./routes/movie');
-const app = express();
+const director = require('./routes/director');
+
 
 // db connection
 
@@ -30,6 +33,7 @@ app.use(bodyParser.json());
 
 app.use('/', indexRouter);
 app.use('/api/movies', movie);
+app.use('/api/directors', director)
 
 
 app.listen(3000);
@@ -47,7 +51,7 @@ app.use((err, req, res, next) => {
 
   // render the error page
   res.status(err.status || 500);
-  res.json({error: err.message, code: err.code});
+  res.json({error: err.message});
 });
 
 
