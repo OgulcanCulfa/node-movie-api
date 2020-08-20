@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 
 
 app.use('/', indexRouter);
-app.use('/api/movie', movie);
+app.use('/api/movies', movie);
 
 
 app.listen(3000);
@@ -47,7 +47,7 @@ app.use((err, req, res, next) => {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.json({error: err.message, code: err.code});
 });
 
 
