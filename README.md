@@ -1,5 +1,5 @@
 # node-movie-api
-Node.JS movie API
+Movie API and CRUD Operations with Express JS
 
 
 # movies
