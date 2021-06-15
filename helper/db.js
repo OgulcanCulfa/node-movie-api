@@ -1,14 +1,19 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 module.exports = () => {
-    mongoose.connect("mongodb://localhost:27017/movie",{useNewUrlParser: true,useUnifiedTopology: true});
-    mongoose.connection.on("open", () => {
-        console.log("MongoDB: Connected");
-    });
+  mongoose.connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    dbName: process.env.DB_NAME,
+  });
+  mongoose.connection.on("open", () => {
+    console.log("MongoDB: Connected");
+  });
 
-    mongoose.connection.on("error", (err) => {
-        console.log("MongoDB: Error", err);
-    });
+  mongoose.connection.on("error", (err) => {
+    console.log("MongoDB: Error", err);
+  });
 
-    mongoose.Promise = global.Promise;
+  mongoose.Promise = global.Promise;
 };
