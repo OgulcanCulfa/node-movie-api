@@ -1,8 +1,6 @@
 # node-movie-api
 Movie API and CRUD Operations with Express JS
 
-## Note: This project hasn't finished yet.
-
 
 # movies
 
